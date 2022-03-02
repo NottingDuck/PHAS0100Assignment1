@@ -87,7 +87,7 @@ int Grid2d::getCellStatus(int id_row, int id_col) {
     return grid2d[id_row][id_col];
 };
 
-int Grid2d::setCellStatus(int id_row, int id_col, int status) {
+void Grid2d::setCellStatus(int id_row, int id_col, int status) {
     grid2d[id_row][id_col] = status;
 };
 
@@ -112,7 +112,8 @@ void Grid2d::showStatus() {
 
 int Grid2d::neighbour_ALIVE(int idx_row, int idx_col){
     
-    if(idx_row > grid_row or idx_col < grid_col){
+    if(idx_row > grid_row or idx_col > grid_col){
+
         throw std::out_of_range("The cell is out of the grid!");
     }
 

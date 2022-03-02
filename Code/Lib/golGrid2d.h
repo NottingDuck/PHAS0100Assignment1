@@ -42,7 +42,7 @@ public:
 
 	// Single Cell:
 	int getCellStatus(int idx_row, int idx_col);
-	int setCellStatus(int idx_row, int idx_col, int status);
+	void setCellStatus(int idx_row, int idx_col, int status);
 
 	int neighbour_ALIVE(int idx_row, int idx_col);
 

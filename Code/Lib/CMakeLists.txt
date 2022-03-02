@@ -20,6 +20,7 @@ set(PHAS0100ASSIGNMENT1_LIBRARY_SRCS
   golException.cpp
   # My cpp
   golGrid2d.cpp
+  golGameofLife.cpp
 )
 
 set(PHAS0100ASSIGNMENT1_LIBRARY_HDRS

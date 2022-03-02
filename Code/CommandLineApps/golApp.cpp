@@ -13,6 +13,7 @@
 =============================================================================*/
 
 #include <golGrid2d.h>
+#include <golGameofLife.h>
 #include <golExceptionMacro.h>
 #include <iostream>
 
@@ -45,11 +46,12 @@ int main(int argc, char** argv)
 
     //std::string path = "../testing/data/glider.txt";
 
-    gol::Grid2d grid_2("../../testing/data/glider.txt");
+    gol::Grid2d grid_2 = gol::Grid2d("../../testing/data/glider.txt");
     std::cout<<grid_2.getRow();
     std::cout<<grid_2.getColumn();
     std::cout<<"\n";
     grid_2.showStatus();
+    std::cout<<"\n";
 
     //std::cout<<grid_2.neighbour_ALIVE(1,0);
     // std::cout<<grid_2.neighbour_ALIVE(2,1);
@@ -61,6 +63,11 @@ int main(int argc, char** argv)
     // std::cout<<grid_2.neighbour_ALIVE(0,0);
     // std::cout<<grid_2.neighbour_ALIVE(1,0);
     // std::cout<<grid_2.neighbour_ALIVE(2,0);
+
+    gol::GameofLife grid_test = gol::GameofLife(grid_2);
+
+    grid_test.TakeStep();
+    grid_test.PrintGrid();
 
     std::cout<<"\n";
 
