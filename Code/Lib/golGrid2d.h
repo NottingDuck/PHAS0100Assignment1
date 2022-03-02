@@ -45,8 +45,9 @@ public:
 	void setCellStatus(int idx_row, int idx_col, int status);
 
 	int neighbour_ALIVE(int idx_row, int idx_col);
-
 	void showStatus();
+
+	std::vector<std::vector<int>> get_grid2d() { return grid2d; }
 };
 
 } // end namespace

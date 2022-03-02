@@ -35,8 +35,13 @@ void GameofLife::TakeStep(){
         }
     }
 
-    grid2d_current = grid2d_next;
+    // find still lifes:
+    if(grid2d_next.get_grid2d() == grid2d_current.get_grid2d()){
+        return;
+    }
 
+    // Update:
+    grid2d_current = grid2d_next;
 };
 void GameofLife::PrintGrid(){
     grid2d_current.showStatus();

@@ -33,6 +33,7 @@ public:
 	// Function:
 	void TakeStep();
 	void PrintGrid();
+
 };
 
 } // end namespace
