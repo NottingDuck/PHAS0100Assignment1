@@ -1,5 +1,6 @@
 #include "golGameofLife.h"
 #include <iostream>
+#include <algorithm>
 
 namespace gol {
 
@@ -23,11 +24,11 @@ void GameofLife::TakeStep(){
                 }
             }
             else if(status_Cell == 1){
-                // Case 2: ALIVE, ALIVE:
+            // Case 2: ALIVE, ALIVE:
                 if(num_ALIVE == 2 or num_ALIVE == 3){
                     grid2d_next.setCellStatus(idx_row,idx_col,1);
                 }
-                // Case 3: ALIVE, DEAD:
+            // Case 3: ALIVE, DEAD:
                 else{
                     grid2d_next.setCellStatus(idx_row,idx_col,0);
                 }
@@ -43,6 +44,7 @@ void GameofLife::TakeStep(){
     // Update:
     grid2d_current = grid2d_next;
 };
+
 void GameofLife::PrintGrid(){
     grid2d_current.showStatus();
     std::cout<<"------------------------------------";

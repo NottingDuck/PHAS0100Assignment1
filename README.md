@@ -24,5 +24,87 @@ and [Dr. Matt Clarkson](https://iris.ucl.ac.uk/iris/browse/profile?upi=MJCLA42).
 
 Build Instructions
 ------------------
+****
+Open the terminal and create a new directory called "build" and enter into it.
 
-Build and run instructions are left as an excercise for the student. Examples of how to build using cmake were given in lectures and in the other CMake example projects.
+```Bash
+mkdir build
+cd build
+cmake ..
+make
+```
+
+Run Instructions
+----------------
+****
+The command should under the "build" directory.
+
+----------------
+
+### ***Command-Line application 1: gofSimulator***
+
+The guidance of gofSimulator apps
+
+```Bash
+./bin/gofSimulator -h
+```
+or
+```Bash
+./bin/gofSimulator --help
+```
+
+***Two Options for users to start the game of life programme.***
+
+- **Option 1:** Read the txt file
+```Bash
+./bin/gofSimulator <filepath> 
+```
+
+- **Option 2:** Create a new random life grid
+
+```Bash
+./bin/gofSimulator <grid row> <grid column> <number of alive cell> <number of alive >
+```
+
+### ***Command-Line application 2: golStillLifes***
+
+The guidance of gofSimulator apps
+
+```Bash
+./bin/gofSimulator -h
+```
+or
+```Bash
+./bin/gofSimulator --help
+```
+
+To create a new random life grid:
+    
+    Enter:
+    1. number of alive cell
+    2. grid row 
+    3. grid column
+    4. iteration
+
+The Code:
+```Bash
+./bin/golStillLifes <number of alive > <grid row> <grid column> <iteration> 
+```
+
+### ***Unit Test***
+```Bash
+ctest -V
+```
+
+### ***- THE Still Life's Pattern***
+
+### **Example 1:**
+![4x4fig1](/Screengrabs/StillPattern/Pattern1.png)
+### **Example 2:**
+![4x4fig1](/Screengrabs/StillPattern/Pattern2.png)
+### **Example 3:**
+![4x4fig1](/Screengrabs/StillPattern/Pattern3.png)
+### **Example 4:**
+![4x4fig1](/Screengrabs/StillPattern/Pattern4.png)
+### **Example 5:**
+![4x4fig1](/Screengrabs/StillPattern/Pattern5.png)
