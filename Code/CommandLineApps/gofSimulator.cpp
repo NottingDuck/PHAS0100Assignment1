@@ -58,12 +58,14 @@ int main(int argc, char** argv)
         gol::Grid2d grid2d = gol::Grid2d(FilePath);
         gol::GameofLife gol = gol::GameofLife(grid2d);
 
+        // Initial status:
+        gol.PrintGrid();
+
         for (int iter = 0; iter < iteration; iter++){
             gol.TakeStep();
+            gol.PrintGrid();
         }
 
-        gol.PrintGrid();
-        
         return 1;
     }
     
@@ -77,10 +79,14 @@ int main(int argc, char** argv)
         gol::Grid2d grid2d = gol::Grid2d(row,column,numAlive);
         gol::GameofLife gol = gol::GameofLife(grid2d);
 
+        // Initial status
+        gol.PrintGrid();
+
         for (int iter=0;iter<iteration;iter++){
             gol.TakeStep();
+            gol.PrintGrid();
         }
-        gol.PrintGrid();
+
         return 1;      
     }
 
