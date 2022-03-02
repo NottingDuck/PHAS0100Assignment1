@@ -41,6 +41,7 @@ void GameofLife::TakeStep(){
 void GameofLife::PrintGrid(){
     grid2d_current.showStatus();
     std::cout<<"------------------------------------";
+    std::cout<<"\n";
 };
 
 } // end namespace

@@ -112,10 +112,9 @@ void Grid2d::showStatus() {
 
 int Grid2d::neighbour_ALIVE(int idx_row, int idx_col){
     
-    if(idx_row > grid_row or idx_col > grid_col){
-
-        throw std::out_of_range("The cell is out of the grid!");
-    }
+    // if(idx_row > grid_row or idx_col > grid_col){
+    //     throw std::out_of_range("The cell is out of the grid!");
+    // }
 
     int count = 0;
         for (int i = idx_row - 1; i <= idx_row + 1; ++i){
