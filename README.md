@@ -98,13 +98,15 @@ ctest -V
 
 ### ***- THE Still Life's Pattern***
 
-### **Example 1:**
+***(Without Boundary Condition)*** 
+
+### **CASE 1:**
 ![4x4fig1](/Screengrabs/StillPattern/Pattern1.png)
-### **Example 2:**
+### **CASE 2:**
 ![4x4fig1](/Screengrabs/StillPattern/Pattern2.png)
-### **Example 3:**
+### **CASE 3:**
 ![4x4fig1](/Screengrabs/StillPattern/Pattern3.png)
-### **Example 4:**
+### **CASE 4:**
 ![4x4fig1](/Screengrabs/StillPattern/Pattern4.png)
-### **Example 5:**
+### **CASE 5:**
 ![4x4fig1](/Screengrabs/StillPattern/Pattern5.png)
