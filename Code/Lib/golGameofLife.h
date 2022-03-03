@@ -33,7 +33,11 @@ public:
 	// Function:
 	void TakeStep();
 	void PrintGrid();
+
+	int getCell(int row, int column);
 };
+
+void validate_iteration(int iteration);	
 
 } // end namespace
 

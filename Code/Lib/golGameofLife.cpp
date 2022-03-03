@@ -51,4 +51,13 @@ void GameofLife::PrintGrid(){
     std::cout<<"\n";
 };
 
+void validate_iteration(int iteration){
+    if (iteration<0){
+        throw std::invalid_argument("The iteration should be a positive integer.");
+    }
+}
+
+int GameofLife::getCell(int row, int column) { return grid2d_current.getCellStatus(row, column); }
+
+
 } // end namespace

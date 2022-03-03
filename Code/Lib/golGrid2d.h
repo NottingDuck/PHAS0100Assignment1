@@ -47,8 +47,15 @@ public:
 	int neighbour_ALIVE(int idx_row, int idx_col);
 	void showStatus();
 
-	std::vector<std::vector<int>> get_grid2d() { return grid2d; }
+	std::vector<std::vector<int>> get_grid2d();
 };
+
+// File Reader
+std::vector<std::vector<int>> FileReader(std::string filePath);
+
+// Validation
+void validate_size(int row, int column);
+void validate_num_ALIVE(int row, int column, int num_ALIVE);
 
 } // end namespace
 
